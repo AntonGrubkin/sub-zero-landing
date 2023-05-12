@@ -1,0 +1,773 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.scroll-hide {overflow: hidden; }
+html {scroll-behavior: smooth;}
+
+/*------------------------style-------------------------*/
+
+li{
+    list-style: none;
+    padding-left: 0;
+}
+
+ul{
+    padding-left: 0;
+    margin: 0;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h2{
+    color: #171717;
+    font-weight: 400;
+    font-size: 52px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    line-height: 63px;
+}
+
+p{
+    color: #222222;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.tittle p{
+    color: #222222;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.block-btns{
+    gap: 15px;
+    margin-top: 72px;
+}
+
+.block-btns-content{
+    margin-top: 50px;
+    gap: 15px;
+}
+
+a.btn-call {
+    width: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #961A1A;
+    padding: 17px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+a.btn-book {
+    width: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    color: #ffffff;
+    font-weight: 500;
+    border:  1px solid #ffffff;
+    letter-spacing: 1.8px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/*------------------------header------------------------*/
+
+.header{
+    max-width: 100%;
+    padding: 95px 0 120px 0;
+    background: url('../image/header-bg.png') no-repeat center top / cover;
+}
+
+.header a{
+    display: flex;
+    justify-content: center;
+}
+
+.general-header-tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-tittle{
+    margin-top: 80px;
+    text-align: center;
+    max-width: 65%;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 73px;
+    letter-spacing: 3.4px;
+    margin-bottom: 50px;
+}
+
+.header-tittle span{
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #353A3F;
+    font-weight: 700;
+    line-height: 31px;
+    background: #D7DCE2;
+    width: auto;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline;
+    box-shadow: -10px solid #D7DCE2, 10px solid #D7DCE2;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/*----------------------progress------------------*/
+
+.item-luxury-support{
+    padding: 45px 0;
+    background-color: #0B0B0B;
+}
+
+.list-progress li{
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #C0C0C0;
+    margin-left: 10px;
+    line-height: 1;
+}
+
+.list-progress{
+    margin-bottom: 7px;
+}
+
+.item-progress span{
+    color: #747474;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.7px;
+}
+
+
+
+/*-------------------------appliance----------------------*/
+
+.appliances{
+    padding: 100px 0;
+}
+
+.tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tittle h2{
+    width: 70%;
+}
+.tittle p{
+    width: 70%;
+}
+
+.pic-appliance{
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    height: 250px;
+    background: url('../image/pic-refr.jpg') no-repeat center top / cover;
+}
+.sect-2{
+    background: url('../image/pic-maintance.jpg') no-repeat center top / cover;
+}
+
+.sect-3{
+    background: url('../image/pic-freezer.jpg') no-repeat center top / cover;
+}
+
+.sect-4{
+    background: url('../image/pic-WC.jpg') no-repeat center top / cover;
+}
+
+.sect-5{
+    background: url('../image/pic-appliance-repair.jpg') no-repeat center top / cover;
+}
+
+.sect-6{
+    background: url('../image/piice-machine.jpg') no-repeat center top / cover;
+}
+
+.item-appliance{
+    max-width: 100%;
+}
+
+
+.pic-appliance span{
+    position: relative;
+    bottom: -142px;
+    font-size: 21px;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 38px;
+    background: #0B0B0B;
+    width: auto;
+    padding: 12px 18px;
+    display: inline;
+    box-shadow: -12px solid #0B0B0B, 12px solid #0B0B0B;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+ul.list-appliance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 40px;
+}
+
+ul.list-appliance li{
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    letter-spacing: 1.2px;
+}
+
+/*-----------------------luxury-specialist----------------------*/
+
+.pic-specialist{
+    max-width: 100%;
+    height: 500px;
+    background: url('../image/pic-luxury-a-s.jpg') no-repeat center top / cover;
+}
+
+
+.describe-previlegy, .describe-previlegy-parts{
+    padding: 70px 0;
+    background: #F3F5F6;
+    align-items: center;
+}
+
+
+.general-container-privilegy{
+    width: 70%;
+}
+
+/*-----------------------parts----------------------*/
+
+.pic-parts{
+    max-width: 100%;
+    height: 500px;
+    background: url('../image/pic-factory-certified.jpg') no-repeat center top / cover;
+}
+
+/*-----------------------customer-guaranteed----------------------*/
+
+.pic-customer-guaranteed{
+    max-width: 100%;
+    height: 500px;
+    background: url('../image/pic-customer-s-g.jpg') no-repeat center top / cover;
+}
+
+/*--------------------------------reviews----------------------*/
+
+.reviews{
+    padding: 100px 0;
+}
+
+
+.item-review{
+    background: #F3F5F6;
+    padding: 60px 50px;
+}
+
+.item-problem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 20px 0;
+}
+
+.raitings{
+    margin-top: 12px;
+    display: flex;
+    gap: 5px;
+}
+
+.raitings i::before{
+    content: '\f005';
+    font-weight: 900;
+    font-family: 'FontAwesome';
+    color: #EDB118;
+    font-size: 18px;
+}
+
+.item-problem span{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #222222;
+}
+
+.item-review p{ 
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.item-review span:nth-last-child(1){ 
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/*-----------------------promo---------------------*/
+
+.promo{
+    padding: 70px 0;
+    background: url('../image/bg-flexible-sistem-discount.jpg') no-repeat center top / cover;
+}
+
+.general-promo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.describe-promo{
+    max-width: 70%;
+    padding: 75px 60px;
+    background: #0B0B0B;
+    text-align: center;
+}
+
+.describe-promo h2{
+    color: #F1F1F1;
+}
+
+.describe-promo p{
+    color: #C9C9C9;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+/*------------------contacts--------------------*/
+
+.contacts{
+    padding: 100px 0;
+}
+
+a.btn-book-content {
+    width: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    color: #171717;
+    font-weight: 600;
+    border:  1px solid #171717;
+    letter-spacing: 1.8px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.time-works span{
+    color: #171717;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.time-works ul{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.time-works ul li{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #222222;
+}
+
+.contacts-pic img{
+    max-width: 100%;
+}
+
+
+/*---------------------mobile-block-stick-----------------*/
+
+a.btn-book-mob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    color: #171717;
+    font-weight: 600;
+    border:  1px solid #171717;
+    letter-spacing: 1.8px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.stick-block-phone{
+    display: none;
+}
+
+
+
+
+/*----------------------footer---------------------*/
+
+.footer{
+    max-width: 100%;
+    padding: 40px 0;
+    background-color: #0B0B0B;
+}
+
+.general-text-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.general-text-footer span{
+    color: #757575;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/*------------------------media--------------------*/
+
+@media screen and (max-device-width: 1226px) and (min-device-width: 1025px){
+    .general-container-privilegy{
+        width: 90%;
+    }
+    .describe-previlegy, .describe-previlegy-parts {
+        padding: 70px 20px;
+        align-items: center;
+    }
+    .stick-block-phone{
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-device-width: 1024px) and (min-device-width: 992px){
+
+
+    .general-container-privilegy{
+        width: 100%;
+    }
+
+    .describe-previlegy, .describe-previlegy-parts {
+        padding: 70px 40px;
+        align-items: center;
+    }
+
+    .pic-specialist, .pic-customer-guaranteed, .pic-parts{
+        height: 500px;
+    }
+
+    .stick-block-phone{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-device-width: 991px) and (min-device-width: 768px){
+
+    .describe-previlegy-parts{
+        order: 1;
+    }
+    .pic-parts{
+        order: 0;
+    }
+
+    .general-container-privilegy{
+        width: 100%;
+    }
+
+    .describe-previlegy, .describe-previlegy-parts {
+        padding: 70px 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pic-specialist, .pic-customer-guaranteed, .pic-parts{
+        height: 400px;
+    }
+    .stick-block-phone{
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-device-width: 1024px) and (min-device-width: 768px){
+
+    .header {
+        padding: 43px 0 79px 0;
+    }
+
+    .header-tittle {
+        margin-top: 50px;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .stick-block-phone{
+        display: none;
+    }
+
+
+    .general-container-privilegy h2{
+        line-height: 57px;
+        font-size: 45px;
+    }
+
+    .general-container-privilegy{
+        width: 100%;
+    }
+
+    .describe-previlegy, .describe-previlegy-parts {
+        padding: 70px 40px;
+        align-items: center;
+    }
+
+
+    .pic-appliance span {
+        font-size: 23px;
+        line-height: 40px;
+    }
+    
+    .tittle p{
+        width: 80%;
+    }
+    
+    .item-progress{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts-info{
+        text-align: center;
+    }
+
+    .block-btns-content{
+        justify-content: center;
+    }
+
+    .contacts-pic img{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-device-width: 767px) and (min-device-width: 360px){
+
+    .header {
+        max-width: 100%;
+        padding: 70px 0 90px 0;
+    }
+    
+    .list-progress li{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .list-progress{
+        margin-bottom: 10px;
+    }
+    
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .header-tittle{
+        margin-top: 60px;
+        max-width: 100%;
+    }
+
+    .block-btns{
+        flex-direction: column;
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    a.btn-call, a.btn-book{
+        width: 100%;
+    }
+
+    .describe-previlegy-parts{
+        order: 1;
+    }
+    .pic-parts{
+        order: 0;
+    }
+
+    .describe-previlegy, .describe-previlegy-parts {
+        padding: 70px 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    h2{
+        line-height: 50px;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .describe-promo {
+        max-width: 90%;
+        padding: 60px 40px;
+    }
+
+    .general-container-privilegy{
+        width: 100%;
+    }
+
+    .describe-previlegy, .describe-previlegy-parts {
+        padding: 70px 40px;
+        align-items: center;
+    }
+
+    .pic-specialist, .pic-customer-guaranteed, .pic-parts{
+        height: 300px;
+    }
+
+    .pic-appliance span {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    .tittle p{
+        width: 100%;
+    }
+
+    .contacts-info{
+        text-align: center;
+    }
+
+    .block-btns-content{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    a.btn-call, a.btn-book-content{
+        width: 100%;
+    }
+
+    .contacts-pic img{
+        display: block;
+    }
+
+    .contacts-pic{
+        margin-top: 60px;
+    }
+
+    .general-text-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .stick-block-phone{
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        background: #F3F5F6;
+        gap: 15px;
+    } 
+
+}
+
+
+@media screen and (max-device-width: 575px) and (min-device-width: 360px){
+
+    .pic-appliance span {
+        font-size: 22px;
+        line-height: 40px;
+        bottom: -200px
+    }
+
+    .pic-appliance{
+        height: 320px;
+    }
+
+    .header-tittle{
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    .header {
+        max-width: 100%;
+        padding: 50px 0 100px 0;
+    }
+
+}
+
+
+@media screen and (max-device-width: 455px) and (min-device-width: 360px){
+ 
+    h1{
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 37px;
+    }
+
+}
+
