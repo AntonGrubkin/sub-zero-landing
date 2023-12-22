@@ -44,7 +44,7 @@ a{
 h2{
     color: #171717;
     font-weight: 400;
-    font-size: 52px;
+    font-size: clamp(39px, 6.5vw, 52px);
     letter-spacing: 2px;
     margin-bottom: 30px;
     line-height: 63px;
@@ -104,15 +104,91 @@ a.btn-book {
     text-transform: uppercase;
 }
 
-/*------------------------header------------------------*/
+/*------------------------menu-----------------------*/
+.nav-icon {
+    display: none;
+    margin: 0;
+    width: 30px;
+}
 
-.header{
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+    background-color: rgb(141, 141, 141);
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 8px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-icon.closed:before {
+    transform: translateY(4px) translateX(-6px) rotate(130deg);
+    width: 18px;
+}
+
+.nav-icon.closed:after {
+    transform: translateY(-4px) translateX(-6px) rotate(-130deg);
+    width: 18px;
+}
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu li a {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    color: #E7E7E7;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.nav-menu li a:hover{
+    color: #979797;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-nav-container{
+    width: 100%;
+    background-color: #0B0B0B;
+    top: -150px;
+    transition: top 1s;
+    z-index: 10000;
+}
+
+.header-nav-container.fixed{
+    position: fixed;
+    width: 100%;
+    background-color: #0B0B0B;
+    top: 0;
+}
+
+
+
+/*------------------------hero------------------------*/
+
+.hero{
     max-width: 100%;
     padding: 95px 0 120px 0;
     background: url('../image/header-bg.png') no-repeat center top / cover;
 }
 
-.header a{
+.hero a{
     display: flex;
     justify-content: center;
 }
@@ -132,7 +208,7 @@ a.btn-book {
 
 h1{
     color: #ffffff;
-    font-size: 63px;
+    font-size: clamp(48px, 7vw, 63px);
     font-weight: 400;
     line-height: 73px;
     letter-spacing: 3.4px;
@@ -198,9 +274,7 @@ h1{
     margin-bottom: 50px;
 }
 
-.tittle h2{
-    width: 70%;
-}
+
 .tittle p{
     width: 70%;
 }
@@ -553,13 +627,68 @@ a.btn-book-mob {
     
 }
 
+@media screen and (max-device-width: 1024px) and (min-device-width: 360px){
+    .nav-icon{
+        display: block;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .btn-head-mob{
+        display: block;
+    }
+
+    
+    .nav-menu{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #0B0B0B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: -100%;
+        left: 0;
+        opacity: 0.9;
+        transition: all 0.4s ease-in-out;
+        opacity:0;
+        
+    }
+
+    .nav-menu li a {
+        font-size: 16px;
+        letter-spacing: 0.7px;
+        font-weight: 500;
+        color: #a3a3a3;
+    }
+    .nav-menu li a:hover{
+        color: #646464;
+    }
+
+    .nav-menu{
+        gap: 45px;
+    }
+    .active{
+        top: 0;
+        z-index: 999;
+        transition: 0,2s ease ;
+        transition: top 1,5s;
+        opacity: 100;
+
+    }
+}
 
 
 @media screen and (max-device-width: 1024px) and (min-device-width: 768px){
 
-    .header {
-        padding: 43px 0 79px 0;
-    }
 
     .header-tittle {
         margin-top: 50px;
@@ -574,7 +703,6 @@ a.btn-book-mob {
 
     .general-container-privilegy h2{
         line-height: 57px;
-        font-size: 45px;
     }
 
     .general-container-privilegy{
@@ -622,7 +750,6 @@ a.btn-book-mob {
 
     .header {
         max-width: 100%;
-        padding: 70px 0 90px 0;
     }
     
     .list-progress li{
@@ -635,7 +762,6 @@ a.btn-book-mob {
     }
     
     h1{
-        font-size: 50px;
         line-height: 60px;
         margin-bottom: 30px;
     }
@@ -670,7 +796,6 @@ a.btn-book-mob {
     
     h2{
         line-height: 50px;
-        font-size: 40px;
         margin-bottom: 20px;
     }
 
@@ -759,7 +884,6 @@ a.btn-book-mob {
 
     .header {
         max-width: 100%;
-        padding: 50px 0 100px 0;
     }
 
 }
@@ -768,7 +892,6 @@ a.btn-book-mob {
 @media screen and (max-device-width: 455px) and (min-device-width: 360px){
  
     h1{
-        font-size: 48px;
         line-height: 58px;
         margin-bottom: 37px;
     }
