@@ -473,55 +473,6 @@ ul.list-appliance li{
 }
 
 
-
-
-
-/*------------------contacts--------------------*/
-
-.contacts{
-    padding: 100px 0;
-}
-
-a.btn-book-content {
-    width: 265px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 17px;
-    color: #171717;
-    font-weight: 600;
-    border:  1px solid #171717;
-    letter-spacing: 1.8px;
-    font-size: 15px;
-    text-transform: uppercase;
-}
-
-.time-works span{
-    color: #171717;
-    font-weight: 800;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-.time-works ul{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.time-works ul li{
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    color: #222222;
-}
-
-.contacts-pic img{
-    max-width: 100%;
-}
-
-
 /*---------------------mobile-block-stick-----------------*/
 
 a.btn-book-mob {
@@ -769,6 +720,115 @@ a.btn-book-inner{
     width: 100%;
 }
 
+/*------------------------contacts--------------------*/
+
+.pic-contact{
+    background: url('../image/contacts.png') no-repeat center top / cover;
+    height: 435px;
+}
+
+.content-contact{
+    margin-top: 40px;
+}
+
+.info{
+    background-color: #FAFAFA;
+    padding: 30px;
+}
+
+.tittle-info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.tittle-info h3{
+    font-weight: 800;
+}
+
+.info-ccontact-description ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.info-ccontact-description ul li a{
+    font-weight: 600;
+    color: #961A1A;
+}
+
+.block-schedule h3{
+    font-weight: 700;
+}
+
+.tittle-form-block h2{
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.block-schedule span{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.block-schedule p{
+    margin-top: 12px;
+}
+
+.block-form{
+    padding: 45px 0 70px 0;
+}
+
+.block-schedule{
+    margin-top: 20px;
+}
+
+/*-----------------form--------------*/
+
+.contacts-form input {
+    padding: 18px 25px;
+    border-radius: 0;
+    border: none;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+.contacts-form textarea{
+    padding: 18px 25px;
+    border-radius: 0;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+.btn-send-info{
+    margin-top: 20px;
+}
+
+a.btn-send-info{
+    width: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #961A1A;
+    padding: 17px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.form-control:focus {
+    box-shadow: none!important;
+    border: none !important;
+    background-color: #fafafa;
+}
+
+.block-schedule a{
+    font-weight: 700;
+    color: #961A1A;
+}
 
 /*------------------------media--------------------*/
 
@@ -1183,7 +1243,6 @@ a.btn-book-inner{
     .reviews {
         padding: 80px 0 90px 0;
     }
-
 
 }
 
